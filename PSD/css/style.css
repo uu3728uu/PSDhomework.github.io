@@ -47,27 +47,32 @@ table {
 	border-spacing: 0;
 }
 
+.body{
+        font-family: Arial, Helvetica, sans-serif;
 
+}
 .container{
-    width: 1002px;
+    max-width: 1002px;
     margin: 0 auto;
-    font-family: Arial, Helvetica, sans-serif;
 }
 .icon ul{
-    display: flex;
-    justify-content: flex-end;
-    background-color: #f5f4f6;
-}
+        display: flex;
+        justify-content: flex-end;
+        background-color: #f5f4f6;
+    }
 .icon ul a{
-    border-right: 1px solid #cdcdcd;
     padding: 5px;
     text-decoration: none;
+}
+.icon ul li+li{
+    border-left: 1px solid #cdcdcd;
+
 }
 .icon ul a:hover{
     color: red;
     font-size: 18px;
 }
-.icon2 a{
+.icon-t a{
     color: #69c6da;
 }
 .header{
@@ -99,19 +104,17 @@ table {
 }
 .menu a:hover{
     color: #A3A3FF;
-    font-size: 18px;
-    border-bottom: 3px solid #A3A3FF
+    scale: 1.2;
 }
 .banner{
     display: flex;
-    flex-direction: column;
-    justify-content: center;
+    align-items: center;
     background-image: url(https://raw.githubusercontent.com/hexschool/HTMLHWSource/master/singlePage/banner.png
     );
-    width: 1002px;
     height: 346px;
 }
 .banner h2{
+    width: 100%;
     color: #fff;
     font-size: 28px;
     font-weight: bold;
@@ -120,23 +123,22 @@ table {
     line-height: 1.2;
     box-shadow: 5px 5px 10px rgba(2, 2, 5, 0.404);
 }
-.item1{
+.cource{
     display: flex;
-    margin-top: 37px;
-    margin-left: 15px;
+    margin: 37px 0 0 15px;
 }
 
-.cource{
+.cource-item{
     margin-right: 23px;
     border: 1px solid #e0e0e0;
     box-shadow: 0px 3px 5px rgba(139, 137, 137, 0.897);
 }
-.cource h3{
+.cource-item h3{
     font-size: 20px;
     font-weight: bold;
     text-align: center;
 }
-.cource p{
+.cource-item p{
     text-align: justify;
     line-height: 1.2;
     padding: 10px 16px 15px 16px;
@@ -147,7 +149,7 @@ table {
     padding-bottom: 20px;
     line-height: 1.2;
 }
-.item2{
+.diff-course{
     margin-top: 42px;
     display: flex;
     flex-direction: column;
@@ -159,12 +161,11 @@ table {
     text-align: justify;
     margin-bottom: 45px;
 }
-.item2 h2{
+.diff-course h2{
     text-align: center;
     font-weight: bold;
     font-size: 24px;
-    padding-top: 5px;
-    padding-bottom: 17px;
+    padding: 5px 0 17px 0;
 }
 .cource-content th,td{
     border-top: 1px solid #e6e5e6;
@@ -178,12 +179,11 @@ table {
 .green{
     color: #669c91;
 }
-.item3{
+.information{
     background: linear-gradient(#004f44,#007968
     );
-    margin-right: 17px;
 }
-.item3 h2{
+.information h2{
     text-align: center;
     font-size: 20px;
     line-height: 1.5;
@@ -198,8 +198,7 @@ table {
 .form textarea{
     width: 45%;
     border-radius: 5px;
-    margin-left: 15px;
-    margin-right: 35px;
+    margin: 0 35px 0 15px;
 }
 .data{
     display: flex;
